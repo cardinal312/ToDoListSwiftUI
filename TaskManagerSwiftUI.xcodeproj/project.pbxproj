@@ -7,22 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA06A0972B06525400A6D141 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06A0962B06525400A6D141 /* AddTaskView.swift */; };
 		FA62574E2AFE6087004DACE3 /* TaskManagerSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62574D2AFE6087004DACE3 /* TaskManagerSwiftUIApp.swift */; };
-		FA6257502AFE6087004DACE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62574F2AFE6087004DACE3 /* ContentView.swift */; };
 		FA6257522AFE6089004DACE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6257512AFE6089004DACE3 /* Assets.xcassets */; };
 		FA6257552AFE6089004DACE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6257542AFE6089004DACE3 /* Preview Assets.xcassets */; };
 		FA6257572AFE6089004DACE3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6257562AFE6089004DACE3 /* Persistence.swift */; };
 		FA62575A2AFE6089004DACE3 /* TaskManagerSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA6257582AFE6089004DACE3 /* TaskManagerSwiftUI.xcdatamodeld */; };
+		FA6257612AFE6259004DACE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6257602AFE6259004DACE3 /* HomeView.swift */; };
+		FA6257632AFE6293004DACE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6257622AFE6293004DACE3 /* ContentView.swift */; };
+		FA6257652AFE63BA004DACE3 /* TaskManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6257642AFE63BA004DACE3 /* TaskManagerViewModel.swift */; };
+		FA6257692AFE6913004DACE3 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6257682AFE6913004DACE3 /* DateView.swift */; };
+		FA62576B2AFE851F004DACE3 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62576A2AFE851F004DACE3 /* TaskCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA06A0962B06525400A6D141 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		FA62574A2AFE6087004DACE3 /* TaskManagerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManagerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA62574D2AFE6087004DACE3 /* TaskManagerSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerSwiftUIApp.swift; sourceTree = "<group>"; };
-		FA62574F2AFE6087004DACE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA6257512AFE6089004DACE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6257542AFE6089004DACE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA6257562AFE6089004DACE3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FA6257592AFE6089004DACE3 /* TaskManagerSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskManagerSwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		FA6257602AFE6259004DACE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA6257622AFE6293004DACE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA6257642AFE63BA004DACE3 /* TaskManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerViewModel.swift; sourceTree = "<group>"; };
+		FA6257682AFE6913004DACE3 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		FA62576A2AFE851F004DACE3 /* TaskCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				FA62574D2AFE6087004DACE3 /* TaskManagerSwiftUIApp.swift */,
-				FA62574F2AFE6087004DACE3 /* ContentView.swift */,
+				FA62576E2AFE9D7D004DACE3 /* ViewModels */,
+				FA62576D2AFE9D61004DACE3 /* Managers */,
+				FA62576C2AFE9D4B004DACE3 /* Views */,
 				FA6257512AFE6089004DACE3 /* Assets.xcassets */,
-				FA6257562AFE6089004DACE3 /* Persistence.swift */,
 				FA6257582AFE6089004DACE3 /* TaskManagerSwiftUI.xcdatamodeld */,
 				FA6257532AFE6089004DACE3 /* Preview Content */,
 			);
@@ -71,6 +82,34 @@
 				FA6257542AFE6089004DACE3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA62576C2AFE9D4B004DACE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA6257622AFE6293004DACE3 /* ContentView.swift */,
+				FA6257602AFE6259004DACE3 /* HomeView.swift */,
+				FA06A0962B06525400A6D141 /* AddTaskView.swift */,
+				FA6257682AFE6913004DACE3 /* DateView.swift */,
+				FA62576A2AFE851F004DACE3 /* TaskCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA62576D2AFE9D61004DACE3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6257562AFE6089004DACE3 /* Persistence.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FA62576E2AFE9D7D004DACE3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA6257642AFE63BA004DACE3 /* TaskManagerViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +183,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA62575A2AFE6089004DACE3 /* TaskManagerSwiftUI.xcdatamodeld in Sources */,
+				FA6257652AFE63BA004DACE3 /* TaskManagerViewModel.swift in Sources */,
+				FA6257692AFE6913004DACE3 /* DateView.swift in Sources */,
+				FA06A0972B06525400A6D141 /* AddTaskView.swift in Sources */,
+				FA6257632AFE6293004DACE3 /* ContentView.swift in Sources */,
 				FA6257572AFE6089004DACE3 /* Persistence.swift in Sources */,
-				FA6257502AFE6087004DACE3 /* ContentView.swift in Sources */,
+				FA6257612AFE6259004DACE3 /* HomeView.swift in Sources */,
+				FA62576B2AFE851F004DACE3 /* TaskCard.swift in Sources */,
 				FA62574E2AFE6087004DACE3 /* TaskManagerSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
