@@ -7,8 +7,8 @@ struct DateView: View {
     @State var correntDate: Date = Date()
     @State var quickNote: String = ""
     @State var editing: Bool = false
-    @State var edit: Bool
-    @State var save: Bool = false
+    @State var edit: Bool = false
+    @State var save: Bool = true
     @AppStorage("note") var note: String?
     
     var body: some View {
@@ -21,7 +21,7 @@ struct DateView: View {
             Rectangle()
                 .frame(height: 100)
                 .frame(maxWidth: .infinity)
-                .foregroundColor(Color.black.opacity(0.4))
+                .foregroundColor(Color("whiteDark")) //(Color.black.opacity(0.4))
                 .overlay(alignment: .top, content: {
                     Rectangle()
                         .frame(height: 20)
@@ -34,15 +34,15 @@ struct DateView: View {
                         TextField("new note", text: $quickNote)
                             .foregroundColor(Color.red)
                             .frame(height: 30)
-                            .background(Color.gray.opacity(0.2).cornerRadius(10))
-                            .offset(y: 5)
+                            .background(Color("toggle"))//(Color.gray.opacity(0.2).cornerRadius(10))
+                            .offset(y: 10)
                     } else {
-                        Text(note ?? "no data").bold()
+                        Text(note ?? "Have't tasks, please enter new task 👽").bold()
                             .minimumScaleFactor(0.6)
                             .font(.headline)
                             .frame(maxWidth: .infinity)
                             .frame(height: 60)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("toggle")) //(.white)
                             .padding(.horizontal, 10)
                         
                     }
@@ -60,7 +60,7 @@ struct DateView: View {
                             }
                             
                         }, label: {
-                            Image(systemName: "pencil").bold()
+                            Image(systemName: "pencil")
                                 .font(.title2)
                                 .foregroundColor(.black)
                             
@@ -77,10 +77,10 @@ struct DateView: View {
                                 quickNote = ""
                             }
                             editing.toggle()
-                            save.toggle()
+                           // save.toggle()
                             
                         }, label: {
-                            Image(systemName: "checkmark").bold()
+                            Image(systemName: "checkmark")
                                 .foregroundColor(.blue)
                         })
                         .padding(7)

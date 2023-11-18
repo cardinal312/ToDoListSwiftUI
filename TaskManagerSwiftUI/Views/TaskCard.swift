@@ -17,7 +17,7 @@ struct TaskCard: View {
             Rectangle()
                 .frame(maxWidth: .infinity)
                 .frame(height: 160)
-                .foregroundColor(Color.gray.opacity(0.7))
+                .foregroundColor(Color("whiteDark").opacity(0.9)) //(Color.gray.opacity(0.7))
                 .overlay(alignment: .leading, content: {
                     Rectangle()
                         .frame(width: 6, height: 130)
@@ -44,7 +44,7 @@ struct TaskCard: View {
                             .minimumScaleFactor(0.9)
                             .multilineTextAlignment(.leading)
                             .font(.headline)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("toggle"))//(.white)
                             .frame(height: 85)
                             .frame(maxWidth: .infinity)
                             .padding(.horizontal, 10)
@@ -58,7 +58,7 @@ struct TaskCard: View {
                         Image(systemName: "clock.arrow.circlepath")
                         Text(dataTime)
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("toggle"))//(.white)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
                     

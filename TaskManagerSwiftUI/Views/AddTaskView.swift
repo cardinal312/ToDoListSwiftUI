@@ -21,7 +21,7 @@ struct AddTaskView: View {
                     Button(action: {
                         envi.dismiss()
                     }, label: {
-                        Image(systemName: "arrow.backward").bold()
+                        Image(systemName: "arrow.backward")
                             .foregroundColor(.red)
                         
                     })
@@ -82,12 +82,13 @@ struct AddTaskView: View {
                 
             }, label: {
                 Text("Save")
-                    .foregroundColor(Color("toggle"))
+                    .foregroundColor(Color(.yellow)) //(Color("toggle"))
                     .padding(.vertical, 12)
                     .padding(.horizontal, 60)
                     .background(Color("whiteDark"), in: Capsule())
                 
             })
+            .padding(.bottom, 30)
         })
     }
 }

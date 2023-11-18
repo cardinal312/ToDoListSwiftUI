@@ -11,7 +11,7 @@ struct HomeView: View {
     @FetchRequest(entity: Task.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Task.deadline, ascending: false)], animation: .easeInOut) var tasks: FetchedResults<Task>
     
     var body: some View {
-        NavigationView {
+       NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     DateView(edit: editing)
@@ -43,7 +43,7 @@ struct HomeView: View {
                     taskManagerViewModel.newTaskView.toggle()
                 }, label: {
                     Text("New task")
-                        .foregroundColor(Color("toggle"))
+                        .foregroundColor(Color(.yellow)) //(Color("toggle"))
                         .padding(.vertical, 12)
                         .padding(.horizontal, 40)
                         .background(.black, in: Capsule())
@@ -63,7 +63,7 @@ struct HomeView: View {
             }
             
         }, label: {
-            Image(systemName: "square.and.pencil.circle.fill")
+            Image(systemName: "paperclip.circle") //square.and.pencil.circle.fill
                 .font(.title2)
                 .foregroundColor(.yellow)
         }))
