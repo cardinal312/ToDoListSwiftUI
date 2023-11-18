@@ -63,7 +63,7 @@ struct HomeView: View {
             }
             
         }, label: {
-            Image(systemName: "paperclip.circle") //square.and.pencil.circle.fill
+            Image(systemName: "paperclip.circle")
                 .font(.title2)
                 .foregroundColor(.yellow)
         }))

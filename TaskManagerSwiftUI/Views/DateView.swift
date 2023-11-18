@@ -21,7 +21,7 @@ struct DateView: View {
             Rectangle()
                 .frame(height: 100)
                 .frame(maxWidth: .infinity)
-                .foregroundColor(Color("whiteDark")) //(Color.black.opacity(0.4))
+                .foregroundColor(Color("whiteDark"))
                 .overlay(alignment: .top, content: {
                     Rectangle()
                         .frame(height: 20)
@@ -34,7 +34,7 @@ struct DateView: View {
                         TextField("new note", text: $quickNote)
                             .foregroundColor(Color.red)
                             .frame(height: 30)
-                            .background(Color("toggle"))//(Color.gray.opacity(0.2).cornerRadius(10))
+                            .background(Color("toggle").cornerRadius(10))//(Color.gray.opacity(0.2).cornerRadius(10))
                             .offset(y: 10)
                     } else {
                         Text(note ?? "Have't tasks, please enter new task 👽").bold()
@@ -42,7 +42,7 @@ struct DateView: View {
                             .font(.headline)
                             .frame(maxWidth: .infinity)
                             .frame(height: 60)
-                            .foregroundColor(Color("toggle")) //(.white)
+                            .foregroundColor(Color("toggle"))
                             .padding(.horizontal, 10)
                         
                     }
