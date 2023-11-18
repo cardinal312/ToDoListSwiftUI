@@ -8,7 +8,7 @@ struct ContentView: View {
                 .navigationTitle("Task manager")
                 .navigationBarTitleDisplayMode(.inline)
         }
-        .padding(.bottom, 30)
+        .padding(.bottom, 30) //
     }
 }
 
